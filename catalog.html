@@ -58,12 +58,18 @@
       </section>
       <h1>Перфораторы</h1>
       <section>
-        <h3>Фильтр:</h3>
-        <h2>Цена:</h2>
-        <input type="range" min="0" max="30000" value="25000" />
-        <input type="text" name="min" id="min" />
-        <span>-</span>
-        <input type="text" name="max" id="max" />
+        <h2>Фильтр:</h2>
+        <h3>Цена:</h3>
+        <div class="range-wrapper">
+          <button type="button"></button>
+          <div class="strip"></div>
+          <button type="button"></button>
+        </div>
+        <div>
+          <input type="number" name="min" id="min" />
+          <span>-</span>
+          <input type="number" name="max" id="max" />
+        </div>
       </section>
       <section>
         <h2>Производители:</h2>
@@ -82,13 +88,13 @@
           <li>Сетевые</li>
         </ul>
       </section>
-      <button type="submit">Показать</button>
+      <a href="#">Показать</a>
       <section>
         <h3>Сортировка:</h3>
         <ul>
-          <li><button type="submit">По цене</button></li>
-          <li><button type="submit">По типу</button></li>
-          <li><button type="submit">По функционалу</button></li>
+          <li><a href="#">По цене</a></li>
+          <li><a href="#">По типу</a></li>
+          <li><a href="#">По функционалу</a></li>
         </ul>
         <button></button>
         <button></button>
@@ -164,7 +170,7 @@
         <button type="submit">Следующая</button>
       </section>
       <section>
-        <h1>Пара слов о перфораторах</h1>
+        <h2>Пара слов о перфораторах</h2>
         <p>
           Перфоратор — универсальный строительный инструмент. Предназначен для
           сверления и долбления отверстий в кирпиче, бетоне и камне. <br />
