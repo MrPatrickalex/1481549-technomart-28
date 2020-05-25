@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>Каталог</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header>
@@ -35,7 +36,7 @@
       </section>
       <nav>
         <ul>
-          <li><a href="#">Главная</a></li>
+          <li><a href="index.html">Главная</a></li>
           <li><a href="#">Компания</a></li>
           <li><a href="catalog.html">Каталог</a></li>
           <li><a href="#">Новости</a></li>
@@ -59,36 +60,95 @@
       <h1>Перфораторы</h1>
       <section>
         <h2>Фильтр:</h2>
-        <h3>Цена:</h3>
-        <div class="range-wrapper">
-          <button type="button"></button>
-          <div class="strip"></div>
-          <button type="button"></button>
-        </div>
-        <div>
-          <input type="number" name="min" id="min" />
-          <span>-</span>
-          <input type="number" name="max" id="max" />
-        </div>
+        <form action="https:/echo.htmlacademy.ru" method="get">
+          <!-- <fieldset>
+            <legend>Цена:</legend>
+            <div class="range-wrapper">
+              <button type="button"></button>
+              <div class="strip"></div>
+              <button type="button"></button>
+            </div>
+            <div>
+              <label for="filter-min"></label>
+              <input type="number" name="min" id="min" id="filter-min" />
+              <span>-</span>
+              <label for="filter-max"></label>
+              <input type="number" name="max" id="max" id="filter-max" />
+            </div>
+          </fieldset> -->
+          <fieldset>
+            <legend>Производители:</legend>
+            <ul>
+              <li>
+                <input
+                  type="checkbox"
+                  name="bosch"
+                  id="filter-checkbox-bosch"
+                  checked
+                />
+                <label for="filter-checkbox-bosch">Bosch</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  name="bosch"
+                  id="filter-checkbox-interscol"
+                />
+                <label for="filter-checkbox-interscol">Интерскол</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  name="bosch"
+                  id="filter-checkbox-makita"
+                  checked
+                />
+                <label for="filter-checkbox-makita">Makita</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  name="bosch"
+                  id="filter-checkbox-dewalt"
+                />
+                <label for="filter-checkbox-dewalt">Dewalt</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  name="bosch"
+                  id="filter-checkbox-hitachi"
+                />
+                <label for="filter-checkbox-hitachi">Hitachi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Питание:</legend>
+            <ul>
+              <li>
+                <input
+                  type="radio"
+                  name="filter-power"
+                  id="filter-radio-accumulator"
+                  checked
+                />
+                <label for="filter-radio-accumulator">Аккумуляторные</label>
+              </li>
+              <li>
+                <input
+                  type="radio"
+                  name="filter-power"
+                  id="filter-radio-network"
+                  checked
+                />
+                <label for="filter-radio-network">Сетевые</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit">Показать</button>
+        </form>
       </section>
-      <section>
-        <h2>Производители:</h2>
-        <ul>
-          <li>BOSCH</li>
-          <li>ИНТЕРСКОЛ</li>
-          <li>MAKITA</li>
-          <li>DEWALT</li>
-          <li>HITACHI</li>
-        </ul>
-      </section>
-      <section>
-        <h2>Питание:</h2>
-        <ul>
-          <li>Аккумуляторные</li>
-          <li>Сетевые</li>
-        </ul>
-      </section>
-      <a href="#">Показать</a>
       <section>
         <h3>Сортировка:</h3>
         <ul>
@@ -210,13 +270,13 @@
         </span>
         <ul>
           <li>
-            <a href="#"><img src="img/Вконтакте.svg" alt="Вконтакте" /></a>
+            <a href="#"><img src="img/Vkontakte.svg" alt="Вконтакте" /></a>
           </li>
           <li>
-            <a href="#"><img src="img/Фейсбук.svg" alt="Facebook" /></a>
+            <a href="#"><img src="img/Facebook.svg" alt="Facebook" /></a>
           </li>
           <li>
-            <a href="#"><img src="img/Инстаграм.svg" alt="Instagram" /></a>
+            <a href="#"><img src="img/Instagram.svg" alt="Instagram" /></a>
           </li>
         </ul>
         <span
@@ -229,5 +289,14 @@
         >
       </section>
     </footer>
+    <section>
+      <h2 class="visually-hidden">Добавление товара</h2>
+      <p>
+        Товар добавлен в корзину!
+      </p>
+      <a href="#">Оформить заказ</a>
+      <button type="button">Продолжить покупки</button>
+      <button type="button" aria-label="Закрыть" />
+    </section>
   </body>
 </html>

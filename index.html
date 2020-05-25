@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Техномарт</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header>
@@ -212,13 +213,13 @@
         </span>
         <ul>
           <li>
-            <a href="#"><img src="img/Вконтакте.svg" alt="Вконтакте" /></a>
+            <a href="#"><img src="img/Vkontakte.svg" alt="Вконтакте" /></a>
           </li>
           <li>
-            <a href="#"><img src="img/Фейсбук.svg" alt="Facebook" /></a>
+            <a href="#"><img src="img/Facebook.svg" alt="Facebook" /></a>
           </li>
           <li>
-            <a href="#"><img src="img/Инстаграм.svg" alt="Instagram" /></a>
+            <a href="#"><img src="img/Instagram.svg" alt="Instagram" /></a>
           </li>
         </ul>
         <span
@@ -231,5 +232,43 @@
         >
       </section>
     </footer>
+    <section>
+      <h2 class="visually-hidden">Оформление заказа</h2>
+      <form action="https:/echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="form-name">Ваше имя:</label>
+          <input
+            type="text"
+            name="name"
+            id="form-name"
+            placeholder="Имя Фамилия"
+            required
+          />
+        </p>
+        <p>
+          <label for="form-email">Ваше имя:</label>
+          <input
+            type="email"
+            name="email"
+            id="form-email"
+            placeholder="email@example.com"
+            required
+          />
+        </p>
+        <p>
+          <label for="form-comment">Текст письма:</label>
+          <textarea
+            name="comment"
+            id="form-comment"
+            cols="30"
+            rows="10"
+            placeholder="В свободной форме"
+            required
+          ></textarea>
+        </p>
+        <button type="submit">Оформить заказ</button>
+      </form>
+      <button type="button" aria-label="Закрыть" />
+    </section>
   </body>
 </html>
