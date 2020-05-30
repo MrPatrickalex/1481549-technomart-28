@@ -9,10 +9,8 @@
   <body>
     <header class="main-header">
       <section class="head">
-        <h2 class="visually-hidden">Шапка</h2>
         <a href="index.html"><img src="/img/logo.svg" alt="Техномарт" /></a>
         <img src="img/icon-search.svg" alt="Поиск" />
-        <input type="text" placeholder="Поиск:" />
         <input type="text" placeholder="Поиск:" />
         <a href="#">
           <img src="/img/icon-bookmark.svg" alt="Закладки" />
@@ -66,7 +64,6 @@
     </header>
     <main class="main-catalog">
       <section class="history">
-        <h2 class="visually-hidden">История</h2>
         <ul>
           <li>
             <a href="index.html"><img src="img/icon-home.svg" alt="Home" /></a>
@@ -112,6 +109,7 @@
             <ul>
               <li>
                 <input
+                  class="visually-hidden"
                   type="checkbox"
                   name="bosch"
                   id="filter-checkbox-bosch"
@@ -121,6 +119,7 @@
               </li>
               <li>
                 <input
+                  class="visually-hidden"
                   type="checkbox"
                   name="bosch"
                   id="filter-checkbox-interscol"
@@ -129,6 +128,7 @@
               </li>
               <li>
                 <input
+                  class="visually-hidden"
                   type="checkbox"
                   name="bosch"
                   id="filter-checkbox-makita"
@@ -138,6 +138,7 @@
               </li>
               <li>
                 <input
+                  class="visually-hidden"
                   type="checkbox"
                   name="bosch"
                   id="filter-checkbox-dewalt"
@@ -146,6 +147,7 @@
               </li>
               <li>
                 <input
+                  class="visually-hidden"
                   type="checkbox"
                   name="bosch"
                   id="filter-checkbox-hitachi"
@@ -156,9 +158,10 @@
           </fieldset>
           <fieldset class="power">
             <legend>Питание:</legend>
-            <ul>
+            <ul class="power-list">
               <li>
                 <input
+                  class="visually-hidden power-item"
                   type="radio"
                   name="filter-power"
                   id="filter-radio-accumulator"
@@ -168,6 +171,7 @@
               </li>
               <li>
                 <input
+                  class="visually-hidden"
                   type="radio"
                   name="filter-power"
                   id="filter-radio-network"
@@ -177,7 +181,7 @@
               </li>
             </ul>
           </fieldset>
-          <button type="submit">Показать</button>
+          <button type="submit" class="show">Показать</button>
         </form>
       </section>
       <section class="sort">
@@ -341,7 +345,9 @@
         </p>
         <p>
           Разработано - <br />
-          <span class="special">htmlacademy.ru</span>
+          <a href="https://htmlacademy.ru/intensive/htmlcss" class="special"
+            >htmlacademy.ru</a
+          >
         </p>
       </section>
     </footer>

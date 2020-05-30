@@ -81,9 +81,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
-  font-size: 13px;
-  line-height: 24px;
-  font-weight: 400;
   color: var(--basic-black);
 }
 
@@ -98,15 +95,6 @@ img {
   height: auto;
 }
 
-h2 {
-  font-size: 30px;
-  line-height: 30px;
-}
-
-ul {
-  list-style: none;
-}
-
 /* Хедер */
 .main-header {
   font-family: "Cuprum", Arial, sans-serif;
@@ -114,43 +102,41 @@ ul {
   font-weight: normal;
 }
 
-.main-header .head {
+.head {
   font-size: 18px;
   line-height: 24px;
   background-color: var(--basic-sea);
 }
 
-.main-header .head a {
+.head a {
   color: var(--basic-white);
 }
 
-.main-header .head .button {
+.head .button {
   background-color: var(--basic-green);
 }
 
-.main-header .description {
+.description-head {
   background-color: var(--basic-sea-light);
 }
 
-.main-header .description-text {
+.description-head p {
   font-size: 16px;
   line-height: 23px;
   font-style: italic;
 }
 
-.main-header .description-address {
+.description-head address {
   font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
 }
 
-.main-header .phone {
+.description-head .phone {
+  font-style: normal;
   font-weight: 700;
   font-size: 21px;
   line-height: 30px;
-}
-
-.main-header .address {
-  font-size: 14px;
-  line-height: 24px;
 }
 
 .main-header .bucket {
@@ -174,7 +160,7 @@ ul {
   background-color: var(--basic-sea);
 }
 
-.main-header .navigation li a {
+.navigation a {
   font-size: 18px;
   line-height: 24px;
   color: var(--basic-white);
@@ -182,14 +168,37 @@ ul {
 
 /* Index.html*/
 
-.main-index .description .button-red {
+.description .button-red {
   background-color: var(--basic-red);
   color: var(--basic-white);
   font-size: 14px;
   line-height: 18px;
 }
 
-.main-index .main-description .list {
+.description p {
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.description ul {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.contacts p {
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.contacts a {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: var(--basic-red);
+  color: var(--basic-white);
+}
+
+.main-description .list {
   font-size: 18px;
   line-height: 24px;
 }
@@ -212,32 +221,32 @@ ul {
   font-weight: 700;
 }
 
-.main-catalog .products li {
+.products li {
   border: 1px solid var(--basic-gray);
 }
 
-.main-catalog .products h2 {
+.products h2 {
   font-weight: 700;
 }
 
-.main-catalog .products del {
+.products del {
   color: var(--basic-gray);
 }
 
-.main-catalog .products .button-cost {
+.products .button-cost {
   color: var(--basic-white);
   background-color: red;
   background-image: url(/img/red-button.svg);
 }
 
-.main-catalog .products .button {
+.products .button {
   color: var(--basic-white);
   background-color: var(--basic-green);
   border-radius: 2px;
   box-shadow: inset 0px -3px 0px var(--basic-green-dark);
 }
 
-.main-catalog .products .button:hover {
+.products .button:hover {
   color: var(--basic-black);
   background-color: var(--basic-white);
   border: 3px solid var(--basic-green);
@@ -255,14 +264,9 @@ ul {
   font-weight: 700;
 }
 
-input[type="checkbox"] {
-  display: none;
-}
-
 input[type="checkbox"] + label {
   background: url(/img/checkbox-off.svg);
   background-repeat: no-repeat;
-  display: inline-block;
   padding-left: 30px;
 }
 
@@ -278,7 +282,6 @@ input[type="radio"] {
 input[type="radio"] + label {
   background: url(/img/radio-off.svg);
   background-repeat: no-repeat;
-  display: inline-block;
   padding-left: 30px;
 }
 
