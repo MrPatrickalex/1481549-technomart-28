@@ -74,6 +74,13 @@
   --basic-green-light: #8ed78f;
   --basic-black: #000000;
   --basic-gray: #a9a9a9;
+  --basic-gray-light: #eaeaea;
+  --basic-gray-light-2: #c5c5c5;
+  --basic-gray-light-3: #f4f4f4;
+  --basic-white-transparent: rgba(255, 255, 255, 0.3);
+  --basic-white-full-transparent: rgba(255, 255, 255, 0);
+  --basic-black-transparent: rgba(0, 0, 0, 0.25);
+  --basic-black-transparent-2: rgba(0, 0, 0, 0.3);
 }
 
 body {
@@ -96,7 +103,7 @@ img {
 }
 
 /* Хедер */
-.main-header {
+header {
   font-family: "Cuprum", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -116,57 +123,296 @@ img {
   background-color: var(--basic-green);
 }
 
-.description-head {
+.details {
   background-color: var(--basic-sea-light);
 }
 
-.description-head p {
+.details p {
   font-size: 16px;
   line-height: 23px;
   font-style: italic;
+  color: var(--basic-red);
 }
 
-.description-head address {
+.details a {
+  color: var(--basic-sea);
+}
+
+.details .address {
   font-style: normal;
   font-size: 14px;
   line-height: 24px;
+  color: var(--basic-sea);
 }
 
-.description-head .phone {
+.details .phone {
   font-style: normal;
   font-weight: 700;
   font-size: 21px;
   line-height: 30px;
+  color: var(--basic-red);
 }
 
-.main-header .bucket {
-  background-color: var(--basic-red);
-}
-
-.main-header .button {
+.details .button {
   font-size: 21px;
   line-height: 21px;
   color: var(--basic-black);
   background-color: var(--basic-white);
 }
 
-.main-header .person {
+.details .person {
   background-color: var(--basic-white);
 }
 
-.main-header .navigation {
+.details a {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.person .person-name {
+  color: var(--basic-black);
+  font-size: 21px;
+  line-height: 21px;
+}
+
+nav {
   font-size: 18px;
   line-height: 24px;
   background-color: var(--basic-sea);
 }
 
-.navigation a {
+nav ul {
+  list-style: none;
+}
+
+nav a {
   font-size: 18px;
   line-height: 24px;
   color: var(--basic-white);
 }
 
 /* Index.html*/
+
+/* Преимущества */
+
+.advantages {
+  color: var(--basic-white);
+  font-family: "Cuprum", Arial, sans-serif;
+}
+
+.advantages ul {
+  list-style: none;
+}
+
+.advantages li:nth-child(1) {
+  background-color: var(--basic-yellow-1);
+  background-image: url(/img/bucket-icon.svg);
+  background-repeat: no-repeat;
+}
+
+.advantages li:nth-child(2) {
+  background-color: var(--basic-blue);
+  background-image: url(/img/insrument.svg);
+  background-repeat: no-repeat;
+}
+
+.advantages li:nth-child(3) {
+  background-color: var(--basic-pink);
+  background-image: url(/img/tractor.svg);
+  background-repeat: no-repeat;
+}
+
+.advantages li:nth-child(4) {
+  background-color: var(--basic-green-light);
+  background-image: url(/img/korzina.svg);
+  background-repeat: no-repeat;
+}
+
+.advantages li:nth-child(5) {
+  background-color: var(--basic-yellow-2);
+  background-image: url(/img/bus.svg);
+  background-repeat: no-repeat;
+}
+
+.advantages h2 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.advantages a {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  background-color: var(--basic-white-transparent);
+}
+
+/* Перфораторы */
+
+.perforators {
+  font-family: "Cuprum", Arial, sans-serif;
+  background-image: url(/img/perforators-banner.jpg);
+  background-repeat: no-repeat;
+}
+
+.perforators .logo {
+  color: var(--basic-white);
+  background-color: var(--basic-black-transparent);
+  background-repeat: no-repeat;
+}
+
+.perforators h2 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.perforators p {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.perforators button {
+  border: none;
+}
+
+.perforators a {
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+}
+
+.perforators .arrow-left {
+  width: 50px;
+  height: 50px;
+  background-color: var(--basic-white-full-transparent);
+  background-image: url(/img/icon-left.svg);
+  background-repeat: no-repeat;
+}
+
+.perforators .arrow-right {
+  width: 50px;
+  height: 50px;
+  background-color: var(--basic-white-full-transparent);
+  background-image: url(/img/icon-right.svg);
+  background-repeat: no-repeat;
+}
+
+/* Популярные товары */
+
+.popular-products .head {
+  background-color: var(--basic-brown-light);
+}
+
+.popular-products h2 {
+  font-family: "Cuprum", Arial, sans-serif;
+  color: var(--basic-sea);
+}
+
+.popular-products a {
+  font-family: "Cuprum", Arial, sans-serif;
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+}
+
+.popular-products ul {
+  list-style: none;
+}
+
+.popular-products del {
+  color: var(--basic-gray);
+}
+
+.popular-products .cost-button {
+  background-image: url(/img/red-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.popular-products .new {
+  width: 50px;
+  height: 50px;
+  background-image: url(/img/new.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Популярные производители */
+
+.popular-products {
+}
+
+.popular-producers .head {
+  font-family: "Cuprum", Arial, sans-serif;
+  background-color: var(--basic-brown-light);
+}
+
+.popular-producers h2 {
+  color: var(--basic-sea);
+}
+
+.popular-producers a {
+  background-color: var(--basic-red);
+}
+
+.popular-products ul {
+  list-style: none;
+}
+
+.popular-producers li {
+  border: 1px solid var(--basic-gray-light);
+}
+
+/* Сервисы */
+
+.services {
+  background-color: var(--basic-sea-light);
+}
+
+.services h2 {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.services p {
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.services h3 {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  color: var(--basic-sea);
+  text-transform: uppercase;
+}
+
+.services li {
+  font-family: "Cuprum", Arial, sans-serif;
+  list-style: none;
+}
+
+.services button {
+  color: var(--basic-white);
+  background-color: var(--basic-sea);
+  border: none;
+}
+
+.services button.checked {
+  color: var(--basic-sea);
+  background-color: var(--basic-white);
+}
+
+/* Описание */
+
+.description h2 {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
 
 .description .button-red {
   background-color: var(--basic-red);
@@ -181,6 +427,8 @@ img {
 }
 
 .description ul {
+  list-style: none;
+  list-style-image: url(/img/list-bullet.svg);
   font-size: 18px;
   line-height: 24px;
 }
@@ -188,6 +436,9 @@ img {
 .contacts p {
   font-size: 13px;
   line-height: 24px;
+}
+
+.contacts .map {
 }
 
 .contacts a {
@@ -198,42 +449,170 @@ img {
   color: var(--basic-white);
 }
 
-.main-description .list {
-  font-size: 18px;
-  line-height: 24px;
-}
-
 /* Каталог */
-.main-catalog {
-  font-family: "PT Sans", Arial, sans-serif;
+
+/* История */
+
+.history ul {
+  list-style: none;
+  list-style-image: url(/img/history-arrow.svg);
 }
 
-.main-catalog .header {
+.history li:nth-child(1) {
+  list-style: none;
+  list-style-image: none;
+}
+
+.history a {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.catalog h1 {
   font-size: 30px;
   line-height: 30px;
   font-family: "Cuprum", Arial, sans-serif;
   background-color: var(--basic-sea-light);
 }
 
-.main-catalog .products {
+/* Фильтр */
+
+.filter h2 {
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: var(--basic-brown-light);
+}
+
+.filter fieldset {
+  border: 0 none;
+}
+
+.filter legend {
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.filter .range-wrapper {
+  background-color: var(--basic-brown-light);
+}
+
+.filter input[type="number"] {
   font-size: 17px;
   line-height: 18px;
-  font-weight: 700;
+  text-transform: uppercase;
+  background-color: var(--basic-brown-light);
+  border: none;
 }
+
+.filter ul {
+  list-style: none;
+}
+
+.filter input[type="checkbox"] + label {
+  background: url(/img/checkbox-off.svg);
+  background-repeat: no-repeat;
+  padding-left: 30px;
+}
+
+.filter input[type="checkbox"]:checked + label {
+  background: url(/img/checkbox-on.svg);
+  background-repeat: no-repeat;
+}
+
+.filter input[type="radio"] + label {
+  background: url(/img/radio-on.svg);
+  background-repeat: no-repeat;
+  padding-left: 30px;
+}
+
+.filter input[type="radio"]:checked + label {
+  background: url(/img/radio-off.svg);
+  background-repeat: no-repeat;
+}
+
+.filter button {
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: var(--basic-white);
+  border: 1px solid var(--basic-gray);
+}
+
+/* Сортировка */
+
+.sort {
+  background-color: var(--basic-brown-light);
+}
+
+.sort h3 {
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.sort ul {
+  list-style: none;
+}
+
+.sort a {
+  text-transform: uppercase;
+  color: var(--basic-black-transparent-2);
+  border-bottom: 1px dotted var(--basic-red);
+}
+
+.sort .checked {
+  color: var(--basic-red);
+}
+
+.sort button {
+  border: none;
+}
+
+.sort .arrow-up {
+  width: 10px;
+  height: 10px;
+  background-image: url(/img/icon-up-dir.svg);
+}
+
+.sort .arrow-down {
+  width: 10px;
+  height: 10px;
+  background-image: url(/img/icon-down-dir.svg);
+}
+
+/* Продукты */
 
 .products li {
   border: 1px solid var(--basic-gray);
 }
 
+.products ul {
+  list-style: none;
+}
+
 .products h2 {
+  font-size: 18px;
+  line-height: 20px;
   font-weight: 700;
 }
 
 .products del {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
   color: var(--basic-gray);
 }
 
 .products .button-cost {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
   color: var(--basic-white);
   background-color: red;
   background-image: url(/img/red-button.svg);
@@ -246,56 +625,59 @@ img {
   box-shadow: inset 0px -3px 0px var(--basic-green-dark);
 }
 
-.products .button:hover {
-  color: var(--basic-black);
+.products .button-buy {
+  background-image: url(/img/korzina.svg);
+  background-repeat: no-repeat;
+}
+
+.products .button-to-bookmarks {
+  color: var(--basic-sea);
   background-color: var(--basic-white);
+  background-image: none;
   border: 3px solid var(--basic-green);
   border-radius: 2px;
   box-shadow: none;
 }
 
-.main-catalog fieldset {
-  border: 0 none;
+/* Навигация 1, 2, 3... */
+
+.navigation ul {
+  list-style: none;
 }
 
-.main-catalog legend {
-  font-size: 17px;
-  line-height: 30px;
-  font-weight: 700;
-}
-
-input[type="checkbox"] + label {
-  background: url(/img/checkbox-off.svg);
-  background-repeat: no-repeat;
-  padding-left: 30px;
-}
-
-input[type="checkbox"]:checked + label {
-  background: url(/img/checkbox-on.svg);
-  background-repeat: no-repeat;
-}
-
-input[type="radio"] {
-  display: none;
-}
-
-input[type="radio"] + label {
-  background: url(/img/radio-off.svg);
-  background-repeat: no-repeat;
-  padding-left: 30px;
-}
-
-input[type="radio"]:checked + label {
-  background: url(/img/radio-on.svg);
-  background-repeat: no-repeat;
-}
-
-button {
+.navigation button {
+  text-transform: uppercase;
+  border: 1px solid var(--basic-gray-light);
   background-color: var(--basic-white);
-  border: 1px solid var(--basic-gray);
+  border-radius: 2px;
+}
+
+.navigation .checked {
+  border: none;
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+}
+
+/* Пара слов о перфораторах */
+
+.few-words {
+  background-color: var(--basic-sea-light);
+}
+
+.few-words h2 {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.few-words p {
+  font-size: 13px;
+  line-height: 24px;
 }
 
 /* Футер */
+
 .footer-navigation {
   font-size: 18px;
   line-height: 24px;
@@ -328,6 +710,95 @@ button {
   background-color: var(--basic-sea-dark);
 }
 
+.footer-social ul {
+  list-style: none;
+}
+
 .footer-social .special {
   color: var(--basic-sienna);
+}
+
+/* оформление заказа|Напишите нам */
+
+.write-us {
+  padding-top: 1px;
+  background-color: var(--basic-red);
+}
+
+.write-us form {
+  background-color: var(--basic-white);
+}
+
+.write-us label {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.write-us input,
+.write-us textarea {
+  color: var(--basic-gray);
+  border: 2px solid var(--basic-gray-light-2);
+  border-radius: 2px;
+}
+
+.write-us .wrapper {
+  background-color: var(--basic-gray-light-3);
+}
+
+.write-us button {
+  border: none;
+}
+
+.write-us .confirm {
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+}
+
+.write-us .button-close {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  background-image: url(/img/icon-close.svg);
+  background-repeat: no-repeat;
+}
+
+.notify {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-weight: 700;
+  background-color: var(--basic-red);
+}
+
+.notify p {
+  font-size: 24px;
+  line-height: 30px;
+  background-color: var(--basic-white);
+  background-image: url(/img/icon-mark.svg);
+  background-repeat: no-repeat;
+}
+
+.notify .wrapper {
+  background-color: var(--basic-gray-light-3);
+}
+
+.notify button {
+  border: none;
+}
+
+.notify .button-confirm {
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+}
+
+.notify .button-continue {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+.notify .button-close {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  background-image: url(/img/icon-close.svg);
+  background-repeat: no-repeat;
 }

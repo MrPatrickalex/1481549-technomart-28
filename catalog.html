@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="main-header">
+    <header>
       <section class="head">
         <a href="index.html"><img src="/img/logo.svg" alt="Техномарт" /></a>
         <img src="img/icon-search.svg" alt="Поиск" />
@@ -16,29 +16,29 @@
           <img src="/img/icon-bookmark.svg" alt="Закладки" />
           Закладки: 0
         </a>
-        <img src="/img/bucket-icon.svg" alt="Ведро" />
-        <a href="#" class="bucket">
+        <a href="#">
+          <img src="/img/bucket-icon.svg" alt="Ведро" />
           Корзина: 10
         </a>
         <a href="#" class="button">Оформить заказ</a>
       </section>
-      <section class="description">
-        <h2 class="visually-hidden">Контакты и пользователь</h2>
+      <section class="details">
+        <h2 class="visually-hidden">Контакты и вход</h2>
         <p>
           Интернет-магазин <br />
           строительных материалов <br />
           и инструментов для ремонта
         </p>
         <address>
-          <a href="tel:+78125550555">+7 (812) 555-05-55</a>
-          <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+          <a class="phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+          <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </address>
         <div>
           <div class="person">
             <a href="#">
               <img src="/img/icon-user.svg" alt="Пользователь" />
             </a>
-            <a href="#">
+            <a href="#" class="person-name">
               Равшан Джамшутович
             </a>
             <a href="#">
@@ -62,7 +62,7 @@
         </ul>
       </nav>
     </header>
-    <main class="main-catalog">
+    <main class="catalog">
       <section class="history">
         <ul>
           <li>
@@ -73,7 +73,7 @@
           <li><a href="#">Перфораторы</a></li>
         </ul>
       </section>
-      <h1 class="header">Перфораторы</h1>
+      <h1>Перфораторы</h1>
       <section class="filter">
         <h2>Фильтр:</h2>
         <form action="https:/echo.htmlacademy.ru" method="get">
@@ -100,7 +100,7 @@
                 name="max"
                 id="max"
                 id="filter-max"
-                placeholder="3"
+                placeholder="30000"
               />
             </div>
           </fieldset>
@@ -187,12 +187,12 @@
       <section class="sort">
         <h3>Сортировка:</h3>
         <ul>
-          <li><a href="#">По цене</a></li>
+          <li><a href="#" class="checked">По цене</a></li>
           <li><a href="#">По типу</a></li>
           <li><a href="#">По функционалу</a></li>
         </ul>
-        <button></button>
-        <button></button>
+        <button class="arrow-up"></button>
+        <button class="arrow-down"></button>
       </section>
       <section class="products">
         <h2 class="visually-hidden">Товары</h2>
@@ -217,7 +217,6 @@
           </li>
           <li>
             <a href="#" class="button button-buy">
-              <img src="img/bucket-icon.svg" alt="Корзина" />
               Купить
             </a>
             <a href="#" class="button button-to-bookmarks">В закладки</a>
@@ -278,16 +277,16 @@
           </li>
         </ul>
       </section>
-      <section class="products-navigation">
+      <section class="navigation">
         <h2 class="visually-hidden">Навигация по товарам</h2>
         <ul>
-          <li><button type="submit">1</button></li>
+          <li><button type="submit" class="checked">1</button></li>
           <li><button type="submit">2</button></li>
           <li><button type="submit">3</button></li>
+          <button type="submit">Следующая</button>
         </ul>
-        <button type="submit">Следующая</button>
       </section>
-      <section class="description">
+      <section class="few-words">
         <h2>Пара слов о перфораторах</h2>
         <p>
           Перфоратор — универсальный строительный инструмент. Предназначен для
@@ -351,14 +350,18 @@
         </p>
       </section>
     </footer>
-    <section>
+    <section class="notify">
       <h2 class="visually-hidden">Добавление товара</h2>
       <p>
         Товар добавлен в корзину!
       </p>
-      <a href="#">Оформить заказ</a>
-      <button type="button">Продолжить покупки</button>
-      <button type="button" aria-label="Закрыть" />
+      <div class="wrapper">
+        <a href="#" class="button-confirm">Оформить заказ</a>
+        <button type="button" class="button-continue">
+          Продолжить покупки
+        </button>
+        <button type="button" aria-label="Закрыть" class="button-close" />
+      </div>
     </section>
   </body>
 </html>
