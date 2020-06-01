@@ -355,7 +355,7 @@ nav a {
   background-color: var(--basic-red);
 }
 
-.popular-products ul {
+.popular-producers ul {
   list-style: none;
 }
 
@@ -502,7 +502,11 @@ nav a {
   background-color: var(--basic-brown-light);
 }
 
-.filter input[type="number"] {
+.filter ul {
+  list-style: none;
+}
+
+.min-max-number {
   font-size: 17px;
   line-height: 18px;
   text-transform: uppercase;
@@ -510,28 +514,24 @@ nav a {
   border: none;
 }
 
-.filter ul {
-  list-style: none;
-}
-
-.filter input[type="checkbox"] + label {
+.filter .producers-checkbox + label {
   background: url(/img/checkbox-off.svg);
   background-repeat: no-repeat;
   padding-left: 30px;
 }
 
-.filter input[type="checkbox"]:checked + label {
+.filter .producers-checkbox:checked + label {
   background: url(/img/checkbox-on.svg);
   background-repeat: no-repeat;
 }
 
-.filter input[type="radio"] + label {
+.filter .power-radio + label {
   background: url(/img/radio-on.svg);
   background-repeat: no-repeat;
   padding-left: 30px;
 }
 
-.filter input[type="radio"]:checked + label {
+.filter .power-radio:checked + label {
   background: url(/img/radio-off.svg);
   background-repeat: no-repeat;
 }
@@ -614,8 +614,9 @@ nav a {
   font-size: 17px;
   line-height: 18px;
   color: var(--basic-white);
-  background-color: red;
-  background-image: url(/img/red-button.svg);
+  background-image: url(../img/red-button.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 .products .button {
@@ -695,11 +696,11 @@ nav a {
   list-style: none;
 }
 
-.footer-navigation .navigation li a {
+.navigation a {
   color: var(--basic-white);
 }
 
-.footer-navigation .navigation-special li a {
+.navigation-special a {
   color: var(--basic-sienna);
 }
 
