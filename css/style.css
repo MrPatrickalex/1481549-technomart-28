@@ -925,17 +925,13 @@ nav a {
   color: var(--basic-white);
 }
 
-.footer-navigation-wrapper {
-  display: flex;
-  align-items: flex-start;
+.footer-main {
+  display: grid;
+  grid-template-columns: 380px 560px;
+  grid-template-rows: 68px 125px;
 }
 
-.footer-navigation-wrapper .footer-logo {
-  /* outline: 2px solid var(--basic-green-light); */
-  width: 220px;
-}
-
-.footer-navigation-wrapper .footer-navigation {
+.footer-navigation {
   display: flex;
   justify-content: flex-end;
   /* outline: 2px solid var(--basic-pink); */
@@ -955,11 +951,6 @@ nav a {
 
 .footer-navigation li:first-child {
   margin-left: 173px;
-}
-
-.footer-special-wrapper {
-  margin-top: 22px;
-  display: flex;
 }
 
 .footer-address {
@@ -1009,7 +1000,8 @@ nav a {
 }
 
 .footer-social-wrapper {
-  display: flex;
+  display: grid;
+  grid-template-columns: 320px 300px 180px 140px;
 }
 
 .footer-social-wrapper .description {
@@ -1040,7 +1032,10 @@ nav a {
   background-image: url("../img/writeus.png");
   border-top: 7px solid var(--basic-red);
   box-shadow: 0px 0px 10px 5px var(--basic-gray-light);
-  position: relative;
+  position: absolute;
+  top: 4400px;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 .write-us form {
@@ -1131,7 +1126,11 @@ nav a {
   font-weight: 700;
   border-top: 7px solid var(--basic-red);
   box-shadow: 0px 0px 10px 5px var(--basic-gray-light);
-  position: relative;
+  position: absolute;
+  top: 500px;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: var(--basic-white);
 }
 
 .notify p {
