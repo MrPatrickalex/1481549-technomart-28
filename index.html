@@ -7,72 +7,69 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="page-body">
-    <header>
-      <section class="head">
+    <header class="header">
+      <section class="header-top">
         <div class="container">
-          <div class="head-index-wrapper">
-            <a href="#" class="head-logo"
+          <div class="grid-wrapper">
+            <a href="#" class="header-logo"
               ><img src="/img/logo.svg" alt="Техномарт"
             /></a>
-            <!-- <img src="img/icon-search.svg" alt="Поиск" /> -->
-            <input type="text" placeholder="Поиск:" class="head-search" />
-            <a href="#" class="head-bookmarks">
-              <!-- <img src="/img/icon-bookmark.svg" alt="Закладки" /> -->
+            <span class="header-search">
+              <input type="text" placeholder="Поиск:" />
+            </span>
+            <a href="#" class="header-bookmarks">
               Закладки: 0
             </a>
-            <a href="#" class="head-items">
-              <!-- <img src="/img/korzina.svg" alt="Ведро" /> -->
+            <a href="#" class="header-items">
               Корзина: 10
             </a>
-            <a href="#" class="head-button">Оформить заказ</a>
+            <a href="#" class="header-make-order">Оформить заказ</a>
           </div>
         </div>
       </section>
-      <div class="wrapper">
-        <section class="details">
-          <div class="container">
-            <div class="details-index-wrapper">
-              <h2 class="visually-hidden">Контакты и вход</h2>
-              <p class="details-description">
-                Интернет-магазин <br />
-                строительных материалов <br />
-                и инструментов для ремонта
+      <section class="header-details">
+        <div class="container">
+          <div class="grid-wrapper">
+            <h2 class="visually-hidden">Контакты и вход</h2>
+            <p class="header-details-description">
+              Интернет-магазин <br />
+              строительных материалов <br />
+              и инструментов для ремонта
+            </p>
+            <address class="header-details-address">
+              <a class="phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+              <p class="address">
+                г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
               </p>
-              <address class="details-address">
-                <a class="phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
-                <p class="address">
-                  г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-                </p>
-              </address>
-              <!-- <img src="/img/icon-login.svg" alt="Логин" /> -->
-              <div class="details-buttons">
-                <a href="#" class="button button-signin">
-                  Войти
-                </a>
-                <a href="#" class="button button-registration">
-                  Регистрация
-                </a>
-              </div>
+            </address>
+            <!-- <img src="/img/icon-login.svg" alt="Логин" /> -->
+            <div class="header-details-buttons">
+              <a href="#" class="button button-signin">
+                Войти
+              </a>
+              <a href="#" class="button button-registration">
+                Регистрация
+              </a>
             </div>
           </div>
-        </section>
-        <nav class="main-nav">
-          <div class="container">
+          <nav class="header-navigation">
             <h2 class="visually-hidden">Навигация</h2>
-            <ul class="navigation">
-              <li><a href="#">Главная</a></li>
-              <li><a href="#">Компания</a></li>
-              <li><a href="catalog.html">Каталог</a></li>
-              <li><a href="#">Новости</a></li>
-              <li><a href="#">Спецпредложения</a></li>
-              <li><a href="#">Доставка</a></li>
-              <li><a href="#">Котакты</a></li>
+            <ul class="navigation-list">
+              <li class="navigation-item"><a href="#">Главная</a></li>
+              <li class="navigation-item"><a href="#">Компания</a></li>
+              <li class="navigation-item">
+                <a href="catalog.html">Каталог</a>
+              </li>
+              <li class="navigation-item"><a href="#">Новости</a></li>
+              <li class="navigation-item"><a href="#">Спецпредложения</a></li>
+              <li class="navigation-item"><a href="#">Доставка</a></li>
+              <li class="navigation-item"><a href="#">Котакты</a></li>
             </ul>
-          </div>
-        </nav>
-      </div>
+          </nav>
+        </div>
+      </section>
     </header>
-    <main class="main-index">
+    <!-- <main class="main-index">
       <section class="advantages">
         <div class="container">
           <h2 class="visually-hidden">Преимущества</h2>
@@ -314,8 +311,8 @@
         </form>
         <button type="button" aria-label="Закрыть" class="button-close" />
       </section>
-    </main>
-    <footer class="footer">
+    </main> -->
+    <!-- <footer class="footer">
       <section class="footer-nav-section">
         <div class="container">
           <div class="footer-main">
@@ -375,6 +372,6 @@
           </div>
         </div>
       </section>
-    </footer>
+    </footer> -->
   </body>
 </html>
