@@ -7,76 +7,74 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="page-body">
-    <header>
-      <section class="head">
+    <header class="header">
+      <section class="header-top">
         <div class="container">
-          <div class="head-catalog-wrapper">
-            <a href="index.html" class="head-logo"
+          <div class="grid-wrapper">
+            <a href="index.html" class="header-logo"
               ><img src="/img/logo.svg" alt="Техномарт"
             /></a>
-            <!-- <img src="img/icon-search.svg" alt="Поиск" /> -->
-            <input type="text" placeholder="Поиск:" class="head-search" />
-            <a href="#" class="head-bookmarks">
-              <!-- <img src="/img/icon-bookmark.svg" alt="Закладки" /> -->
+            <span class="header-search">
+              <input type="text" placeholder="Поиск:" />
+            </span>
+            <a href="#" class="header-bookmarks">
               Закладки: 0
             </a>
-            <a href="#" class="head-items">
-              <!-- <img src="/img/bucket-icon.svg" alt="Ведро" /> -->
+            <a href="#" class="header-items-catalog">
               Корзина: 10
             </a>
-            <a href="#" class="head-button">Оформить заказ</a>
+            <a href="#" class="header-make-order">Оформить заказ</a>
           </div>
         </div>
       </section>
-      <div class="wrapper">
-        <section class="details">
-          <div class="container">
-            <div class="details-catalog-wrapper">
-              <h2 class="visually-hidden">Контакты и вход</h2>
-              <p>
-                Интернет-магазин <br />
-                строительных материалов <br />
-                и инструментов для ремонта
+      <section class="header-details">
+        <div class="container">
+          <div class="grid-wrapper">
+            <h2 class="visually-hidden">Контакты и вход</h2>
+            <p class="header-details-description">
+              Интернет-магазин <br />
+              строительных материалов <br />
+              и инструментов для ремонта
+            </p>
+            <address class="header-details-address">
+              <a class="phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+              <p class="address">
+                г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
               </p>
-              <address>
-                <a class="phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
-                <p class="address">
-                  г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-                </p>
-              </address>
-              <div>
-                <div class="person">
-                  <a href="#">
-                    <img src="/img/icon-user.svg" alt="Пользователь" />
-                  </a>
-                  <a href="#" class="person-name">
-                    Равшан Джамшутович
-                  </a>
-                  <a href="#">
-                    <img src="/img/icon-login.svg" alt="Логин" />
-                  </a>
-                </div>
-                <a href="#">Мои заказы</a>
-                <a href="#">Личный кабинет</a>
-              </div>
+            </address>
+            <div class="header-person">
+              <!-- <div class=""> -->
+              <!-- <a href="#">
+                  <img src="/img/icon-user.svg" alt="Пользователь" />
+                </a> -->
+              <!-- <a href="#">
+                  <img src="/img/icon-login.svg" alt="Логин" />
+                </a> -->
+              <!-- </div> -->
+              <a href="#" class="person-name">
+                Равшан Джамшутович
+              </a>
+              <a href="#" class="my-orders">Мои заказы</a>
+              <div class="round"></div>
+              <a href="#" class="person-page">Личный кабинет</a>
             </div>
           </div>
-        </section>
-        <nav class="main-nav">
-          <div class="container">
+          <nav class="header-navigation">
             <h2 class="visually-hidden">Навигация</h2>
-            <ul class="navigation">
-              <li><a href="index.html">Главная</a></li>
-              <li><a href="#">Компания</a></li>
-              <li><a href="catalog.html">Каталог</a></li>
-              <li><a href="#">Новости</a></li>
-              <li><a href="#">Спецпредложения</a></li>
-              <li><a href="#">Доставка</a></li>
-              <li><a href="#">Контакты</a></li>
+            <ul class="navigation-list">
+              <li class="navigation-item"><a href="#">Главная</a></li>
+              <li class="navigation-item"><a href="#">Компания</a></li>
+              <li class="navigation-item">
+                <a href="catalog.html">Каталог</a>
+              </li>
+              <li class="navigation-item"><a href="#">Новости</a></li>
+              <li class="navigation-item"><a href="#">Спецпредложения</a></li>
+              <li class="navigation-item"><a href="#">Доставка</a></li>
+              <li class="navigation-item"><a href="#">Котакты</a></li>
             </ul>
-          </div>
-        </nav>
-      </div>
+          </nav>
+        </div>
+      </section>
     </header>
     <main class="catalog">
       <div class="container">
@@ -332,49 +330,53 @@
       </div>
     </main>
     <footer class="footer">
-      <section class="footer-nav-section">
+      <section class="footer-navigation">
         <div class="container">
-          <div class="footer-main">
+          <div class="grid-wrapper">
             <h2 class="visually-hidden">Контакты</h2>
             <a href="" class="footer-logo"
               ><img src="/img/logo-footer.svg" alt="Техномарт"
             /></a>
-            <ul class="footer-navigation">
-              <li><a href="#">Компания</a></li>
-              <li><a href="#">Новости</a></li>
-              <li><a href="catalog.html">Каталог</a></li>
-              <li><a href="#">Доставка</a></li>
-              <li><a href="#">Контакты</a></li>
+            <ul class="footer-navigation-list">
+              <li class="navigation-item"><a href="#">Компания</a></li>
+              <li class="navigation-item"><a href="#">Новости</a></li>
+              <li class="navigation-item">
+                <a href="catalog.html">Каталог</a>
+              </li>
+              <li class="navigation-item"><a href="#">Доставка</a></li>
+              <li class="navigation-item"><a href="#">Контакты</a></li>
             </ul>
+          </div>
+          <div class="grid-wrapper">
             <address class="footer-address">
               г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br />
               +7 (812) 555-05-55
             </address>
-            <ul class="navigation-special">
-              <li><a href="#">Материалы</a></li>
-              <li><a href="#">Техника</a></li>
-              <li><a href="#">Инструмент</a></li>
-              <li><a href="#">Спецпредложения</a></li>
+            <ul class="navigation-special-list">
+              <li class="navigation-item"><a href="#">Материалы</a></li>
+              <li class="navigation-item"><a href="#">Техника</a></li>
+              <li class="navigation-item"><a href="#">Инструмент</a></li>
+              <li class="navigation-item"><a href="#">Спецпредложения</a></li>
             </ul>
           </div>
         </div>
       </section>
-      <section class="footer-social">
+      <section class="footer-contacts">
         <div class="container">
-          <div class="footer-social-wrapper">
+          <div class="grid-wrapper">
             <h2 class="visually-hidden">Соцсети</h2>
-            <p class="description">
+            <p class="copyright">
               ©2010–2019 Компания «Техномарт» <br />
               Все права защищены
             </p>
-            <ul class="social">
-              <li>
+            <ul class="social-list">
+              <li class="social-item">
                 <a href="#"><img src="img/Vkontakte.svg" alt="Вконтакте" /></a>
               </li>
-              <li>
+              <li class="social-item">
                 <a href="#"><img src="img/Facebook.svg" alt="Facebook" /></a>
               </li>
-              <li>
+              <li class="social-item">
                 <a href="#"><img src="img/Instagram.svg" alt="Instagram" /></a>
               </li>
             </ul>
