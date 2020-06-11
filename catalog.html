@@ -100,31 +100,33 @@
               <form action="https:/echo.htmlacademy.ru" method="get">
                 <fieldset class="cost">
                   <legend>Цена:</legend>
-                  <div class="range-wrapper">
-                    <button type="button"></button>
-                    <div class="strip"></div>
-                    <button type="button"></button>
-                  </div>
-                  <div>
-                    <label for="filter-min"></label>
-                    <input
-                      class="min-max-number"
-                      type="number"
-                      name="min"
-                      id="min"
-                      id="filter-min"
-                      placeholder="0"
-                    />
-                    <span>-</span>
-                    <label for="filter-max"></label>
-                    <input
-                      class="min-max-number"
-                      type="number"
-                      name="max"
-                      id="max"
-                      id="filter-max"
-                      placeholder="30000"
-                    />
+                  <div class="range-filter">
+                    <div class="range-controls">
+                      <div class="scale">
+                        <div class="bar"></div>
+                      </div>
+                      <div class="toggle toggle-min"></div>
+                      <div class="toggle toggle-max"></div>
+                    </div>
+                    <div class="price-controls">
+                      <label for="filter-min"></label>
+                      <input
+                        type="number"
+                        name="min"
+                        id="min"
+                        id="filter-min"
+                        placeholder="0"
+                      />
+                      <span class="line"></span>
+                      <label for="filter-max"></label>
+                      <input
+                        type="number"
+                        name="max"
+                        id="max"
+                        id="filter-max"
+                        placeholder="30000"
+                      />
+                    </div>
                   </div>
                 </fieldset>
                 <fieldset class="producers">
@@ -390,7 +392,7 @@
         </div>
       </section>
     </footer>
-    <section class="notify container">
+    <!-- <section class="notify container">
       <h2 class="visually-hidden">Добавление товара</h2>
       <p>
         Товар добавлен в корзину!
@@ -402,6 +404,6 @@
         </button>
         <button type="button" aria-label="Закрыть" class="button-close" />
       </div>
-    </section>
+    </section> -->
   </body>
 </html>

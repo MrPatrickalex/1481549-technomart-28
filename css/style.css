@@ -73,10 +73,12 @@
   --basic-green-dark: #367315;
   --basic-green-light: #8ed78f;
   --basic-black: #000000;
+  --basic-black-light: #444444;
   --basic-gray: #a9a9a9;
   --basic-gray-light: #eaeaea;
   --basic-gray-light-2: #c5c5c5;
   --basic-gray-light-3: #f4f4f4;
+  --basic-gray-light-4: #d7dcde;
   --basic-white-transparent: rgba(255, 255, 255, 0.3);
   --basic-white-full-transparent: rgba(255, 255, 255, 0);
   --basic-black-transparent: rgba(0, 0, 0, 0.25);
@@ -771,6 +773,8 @@ img {
 }
 
 .filter fieldset {
+  margin: 0;
+  padding: 0;
   border: 0 none;
 }
 
@@ -781,20 +785,78 @@ img {
   text-transform: uppercase;
 }
 
-.filter .range-wrapper {
+.range-controls {
+  padding-top: 39px;
+  padding-bottom: 41px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 15px;
   background-color: var(--basic-brown-light);
+  border-radius: 5px;
+  position: relative;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background-color: var(--basic-gray-light-4);
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background-color: var(--basic-green-light);
+}
+
+.range-controls .toggle {
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid var(--basic-white);
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  background-color: #ababab;
+  box-sizing: content-box;
+  position: absolute;
+  top: 31px;
+  left: 0;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 130px;
+}
+
+.price-controls {
+  display: flex;
+  align-items: center;
+}
+
+.price-controls input {
+  width: 95px;
+  padding: 10px;
+  margin: 0;
+  font-size: 17px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: var(--basic-brown-light);
+  border: none;
+}
+
+.price-controls .line {
+  height: 1px;
+  width: 9px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: var(--basic-black-light);
 }
 
 .filter ul {
   list-style: none;
-}
-
-.min-max-number {
-  font-size: 17px;
-  line-height: 18px;
-  text-transform: uppercase;
-  background-color: var(--basic-brown-light);
-  border: none;
 }
 
 .filter .producers-checkbox + label {
