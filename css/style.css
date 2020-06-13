@@ -56,6 +56,10 @@
   overflow: hidden;
 }
 
+.hidden {
+  visibility: hidden;
+}
+
 /* Variables */
 :root {
   --basic-red: #ee3643;
@@ -423,6 +427,23 @@ img {
 
 /* Index.html*/
 
+/* Для всех секций */
+
+.section-wrapper {
+  background-color: var(--basic-brown-light);
+}
+
+.section-header {
+  font-family: "Cuprum", Arial, sans-serif;
+  color: var(--basic-sea);
+}
+
+.section-reference {
+  font-family: "Cuprum", Arial, sans-serif;
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+}
+
 /* Преимущества */
 
 .advantages-list {
@@ -557,47 +578,11 @@ img {
 
 /* Популярные товары */
 
-.popular-products .head {
-  background-color: var(--basic-brown-light);
-}
-
-.popular-products h2 {
-  font-family: "Cuprum", Arial, sans-serif;
-  color: var(--basic-sea);
-}
-
-.popular-products a {
-  font-family: "Cuprum", Arial, sans-serif;
-  color: var(--basic-white);
-  background-color: var(--basic-red);
-}
-
-.popular-products ul {
-  list-style: none;
-}
-
-.popular-products del {
-  color: var(--basic-gray);
-}
-
-.popular-products .cost-button {
-  background-image: url(/img/red-arrow.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.popular-products .new {
-  width: 50px;
-  height: 50px;
-  background-image: url(/img/new.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 .popular-products-list {
   display: grid;
-  grid-template-columns: 220px 220px 220px 220px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 20px;
+  list-style: none;
 }
 
 /* Популярные производители */
@@ -1005,36 +990,61 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
-}
-
-.product-item {
-  width: 220px;
-}
-
-.products li {
-  border: 1px solid var(--basic-gray-light);
-}
-
-.products ul {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-.products h2 {
+.product-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 22px;
+  padding-bottom: 21px;
+  width: 220px;
+  border: 1px solid var(--basic-gray-light);
+}
+
+.product-new {
+  background: url("../img/new.svg") no-repeat;
+  background-position-x: 100%;
+}
+
+.product-image {
+  max-width: 100%;
+  height: 83px;
+  width: auto;
+  margin-top: 44px;
+  position: relative;
+  z-index: -99999;
+}
+
+.product-name {
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
+  margin: 0;
+  padding: 0;
+  margin-top: 52px;
+  text-align: center;
+  /* outline: 1px solid red; */
 }
 
-.products del {
+.product-past-cost {
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
   color: var(--basic-gray);
+  margin: 0;
+  padding: 0;
+  margin-top: 7px;
+  display: block;
 }
 
-.products .button-cost {
+.button-cost {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
@@ -1042,18 +1052,34 @@ img {
   background-image: url(../img/red-button.svg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  width: 141px;
+  height: 37px;
+  margin-top: 13px;
+}
+
+.products .product-buttons {
+  margin-top: 38px;
+  height: 83px;
 }
 
 .products .button {
-  color: var(--basic-white);
-  background-color: var(--basic-green);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 135px;
+  height: 39px;
   border-radius: 2px;
-  box-shadow: inset 0px -3px 0px var(--basic-green-dark);
 }
 
 .products .button-buy {
-  background-image: url(/img/korzina.svg);
+  color: var(--basic-white);
+  background-color: var(--basic-green);
+  background-image: url(/img/icon-cart.svg);
   background-repeat: no-repeat;
+  background-position: 30px 10px;
+  box-shadow: inset 0px -3px 0px var(--basic-green-dark);
 }
 
 .products .button-to-bookmarks {
@@ -1061,8 +1087,7 @@ img {
   background-color: var(--basic-white);
   background-image: none;
   border: 3px solid var(--basic-green);
-  border-radius: 2px;
-  box-shadow: none;
+  margin-top: 10px;
 }
 
 /* Навигация 1, 2, 3... */
