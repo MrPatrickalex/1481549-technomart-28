@@ -767,15 +767,19 @@ img {
 
 /* История */
 
+.history {
+  margin-top: 19px;
+  margin-bottom: 20px;
+}
+
 .history ul {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-.history li:nth-child(1) {
-  list-style: none;
-  list-style-image: none;
+.history-wrapper {
+  display: flex;
 }
 
 .history a {
@@ -784,10 +788,6 @@ img {
   line-height: 18px;
   text-transform: uppercase;
   color: var(--basic-black);
-}
-
-.history-wrapper {
-  display: flex;
 }
 
 .history-item:not(:first-of-type) {
@@ -801,17 +801,17 @@ img {
 }
 
 .history-item:nth-of-type(2) {
-  padding-left: 18px;
+  padding-left: 25px;
   padding-right: 17px;
 }
 
 .history-item:nth-of-type(3) {
-  padding-left: 15px;
+  padding-left: 22px;
   padding-right: 17px;
 }
 
 .history-item:nth-of-type(4) {
-  padding-left: 17px;
+  padding-left: 25px;
 }
 
 .catalog .main-header {
@@ -824,10 +824,12 @@ img {
   padding-left: 29px;
   padding-top: 29px;
   padding-bottom: 30px;
+  margin: 0;
 }
 
 .catalog-wrapper {
   display: flex;
+  margin-top: 20px;
 }
 
 .filters-wrapper {
@@ -846,9 +848,11 @@ img {
   line-height: 18px;
   text-transform: uppercase;
   background-color: var(--basic-brown-light);
+  margin: 0;
   padding-left: 18px;
   padding-top: 10px;
   padding-bottom: 10px;
+  border-radius: 5px;
 }
 
 .filter fieldset {
@@ -928,6 +932,7 @@ img {
   width: 95px;
   padding: 10px;
   margin: 0;
+  border-radius: 5px;
   font-size: 17px;
   line-height: 18px;
   text-transform: uppercase;
@@ -1016,10 +1021,17 @@ img {
 
 .sort {
   display: flex;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 19px;
   background-color: var(--basic-brown-light);
+  border-radius: 5px;
 }
 
-.sort h3 {
+.sort h2 {
+  margin: 0;
+  padding: 0;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
@@ -1027,10 +1039,53 @@ img {
 
 .sort ul {
   display: flex;
+  margin: 0;
+  padding: 0;
   list-style: none;
+  /* outline: 1px solid greenyellow; */
+}
+
+.sort li {
+  margin: 0;
+  padding: 0;
+  /* outline: 1px solid red; */
+}
+
+.sort li:nth-child(1) {
+  width: 219px;
+  padding-left: 140px;
+}
+
+.sort li:nth-child(2) {
+  width: 140px;
+  padding-left: 44px;
+}
+
+.sort li:nth-child(3) {
+  padding-left: 22px;
+  width: 160px;
+}
+
+.sort .arrow-up {
+  width: 10px;
+  height: 10px;
+  margin-left: 21px;
+  margin-top: 4px;
+  background-image: url(/img/icon-up-dir.svg);
+}
+
+.sort .arrow-down {
+  width: 10px;
+  height: 10px;
+  margin-left: 21px;
+  margin-top: 4px;
+  background-image: url(/img/icon-down-dir.svg);
 }
 
 .sort a {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
   text-transform: uppercase;
   color: var(--basic-black-transparent-2);
   border-bottom: 1px dotted var(--basic-red);
@@ -1044,19 +1099,11 @@ img {
   border: none;
 }
 
-.sort .arrow-up {
-  width: 10px;
-  height: 10px;
-  background-image: url(/img/icon-up-dir.svg);
-}
-
-.sort .arrow-down {
-  width: 10px;
-  height: 10px;
-  background-image: url(/img/icon-down-dir.svg);
-}
-
 /* Продукты */
+
+.products {
+  margin-top: 28px;
+}
 
 .product-list {
   display: grid;
@@ -1167,9 +1214,34 @@ img {
 .navigation-123 ul {
   display: flex;
   list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 48px;
+}
+
+.navigation-123 li:not(:first-child) {
+  margin-left: 10px;
+}
+
+.navigation-123 .navigation-item {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.navigation-123 .next {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  padding-right: 31px;
+  margin-left: 10px;
 }
 
 .navigation-123 button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-transform: uppercase;
   border: 1px solid var(--basic-gray-light);
   background-color: var(--basic-white);
@@ -1185,6 +1257,9 @@ img {
 /* Пара слов о перфораторах */
 
 .few-words {
+  margin-top: 59px;
+  padding-top: 64px;
+  padding-bottom: 68px;
   background-color: var(--basic-sea-light);
 }
 
@@ -1193,9 +1268,12 @@ img {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
 }
 
 .few-words p {
+  margin-top: 25px;
   font-size: 13px;
   line-height: 24px;
 }
