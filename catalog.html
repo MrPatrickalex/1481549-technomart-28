@@ -91,8 +91,8 @@
           </ul>
         </section>
         <h1 class="main-header">Перфораторы</h1>
-        <div class="wrapper">
-          <div class="filter-wrapper">
+        <div class="catalog-wrapper">
+          <div class="filters-wrapper">
             <section class="filter">
               <h2>Фильтр:</h2>
               <form action="https:/echo.htmlacademy.ru" method="get">
@@ -109,15 +109,17 @@
                     <div class="price-controls">
                       <label for="filter-min"></label>
                       <input
+                        class="min-input"
                         type="number"
                         name="min"
                         id="min"
                         id="filter-min"
                         placeholder="0"
                       />
-                      <span class="line"></span>
+                      <span class="line">—</span>
                       <label for="filter-max"></label>
                       <input
+                        class="max-input"
                         type="number"
                         name="max"
                         id="max"
@@ -130,7 +132,7 @@
                 <fieldset class="producers">
                   <legend>Производители:</legend>
                   <ul>
-                    <li>
+                    <li class="producer-item">
                       <input
                         class="visually-hidden producers-checkbox"
                         type="checkbox"
@@ -140,7 +142,7 @@
                       />
                       <label for="filter-checkbox-bosch">Bosch</label>
                     </li>
-                    <li>
+                    <li class="producer-item">
                       <input
                         class="visually-hidden producers-checkbox"
                         type="checkbox"
@@ -149,7 +151,7 @@
                       />
                       <label for="filter-checkbox-interscol">Интерскол</label>
                     </li>
-                    <li>
+                    <li class="producer-item">
                       <input
                         class="visually-hidden producers-checkbox"
                         type="checkbox"
@@ -159,7 +161,7 @@
                       />
                       <label for="filter-checkbox-makita">Makita</label>
                     </li>
-                    <li>
+                    <li class="producer-item">
                       <input
                         class="visually-hidden producers-checkbox"
                         type="checkbox"
@@ -168,7 +170,7 @@
                       />
                       <label for="filter-checkbox-dewalt">Dewalt</label>
                     </li>
-                    <li>
+                    <li class="producer-item">
                       <input
                         class="visually-hidden producers-checkbox"
                         type="checkbox"
@@ -182,7 +184,7 @@
                 <fieldset class="power">
                   <legend>Питание:</legend>
                   <ul class="power-list">
-                    <li>
+                    <li class="power-item">
                       <input
                         class="visually-hidden power-radio"
                         type="radio"
@@ -194,7 +196,7 @@
                         >Аккумуляторные</label
                       >
                     </li>
-                    <li>
+                    <li class="power-item">
                       <input
                         class="visually-hidden power-radio"
                         type="radio"
@@ -210,7 +212,7 @@
               </form>
             </section>
           </div>
-          <div class="catalog-wrapper">
+          <div class="products-wrapper">
             <section class="sort">
               <h3>Сортировка:</h3>
               <ul>

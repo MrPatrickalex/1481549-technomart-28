@@ -83,6 +83,7 @@
   --basic-gray-light-2: #c5c5c5;
   --basic-gray-light-3: #f4f4f4;
   --basic-gray-light-4: #d7dcde;
+  --basic-gray-light-5: #ebebeb;
   --basic-white-transparent: rgba(255, 255, 255, 0.3);
   --basic-white-full-transparent: rgba(255, 255, 255, 0);
   --basic-black-transparent: rgba(0, 0, 0, 0.25);
@@ -430,17 +431,40 @@ img {
 /* Для всех секций */
 
 .section-wrapper {
+  display: flex;
+  justify-content: space-between;
   background-color: var(--basic-brown-light);
 }
 
 .section-header {
+  margin: 0;
+  padding: 0;
+  margin-top: 29px;
+  margin-left: 28px;
+  margin-bottom: 30px;
   font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
   color: var(--basic-sea);
 }
 
 .section-reference {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  margin-right: 14px;
+  margin-bottom: 26px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 11px;
+  padding-bottom: 9px;
   font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
   color: var(--basic-white);
+  text-transform: uppercase;
   background-color: var(--basic-red);
 }
 
@@ -802,16 +826,17 @@ img {
   padding-bottom: 30px;
 }
 
-.catalog .wrapper {
+.catalog-wrapper {
   display: flex;
 }
 
-.filter-wrapper {
+.filters-wrapper {
   width: 220px;
 }
 
-.catalog-wrapper {
+.products-wrapper {
   width: 700px;
+  margin-left: 20px;
 }
 
 /* Фильтр */
@@ -821,6 +846,9 @@ img {
   line-height: 18px;
   text-transform: uppercase;
   background-color: var(--basic-brown-light);
+  padding-left: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .filter fieldset {
@@ -836,12 +864,22 @@ img {
   text-transform: uppercase;
 }
 
+.filter .cost {
+  margin-top: 14px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid var(--basic-gray-light-5);
+}
+
+.cost legend {
+  margin-bottom: 10px;
+}
+
 .range-controls {
   padding-top: 39px;
-  padding-bottom: 41px;
+  padding-bottom: 39px;
   padding-left: 20px;
   padding-right: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 9px;
   background-color: var(--basic-brown-light);
   border-radius: 5px;
   position: relative;
@@ -899,21 +937,36 @@ img {
 }
 
 .price-controls .line {
-  height: 1px;
-  width: 9px;
   margin-left: 10px;
   margin-right: 10px;
-  background-color: var(--basic-black-light);
+}
+
+.filter .producers {
+  margin-top: 16px;
+  padding-bottom: 26px;
+  border-bottom: 1px solid var(--basic-gray-light-5);
+}
+
+.producers legend {
+  margin-bottom: 15px;
 }
 
 .filter ul {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
+.filter .producer-item:not(:first-child) {
+  margin-top: 16px;
+}
+
 .filter .producers-checkbox + label {
+  padding-bottom: 30px;
   background: url(/img/checkbox-off.svg);
   background-repeat: no-repeat;
-  padding-left: 30px;
+  padding-left: 35px;
+  text-transform: uppercase;
 }
 
 .filter .producers-checkbox:checked + label {
@@ -921,10 +974,23 @@ img {
   background-repeat: no-repeat;
 }
 
+.filter .power {
+  margin-top: 18px;
+}
+
+.power legend {
+  margin-bottom: 20px;
+}
+
+.power .power-item:not(:first-child) {
+  margin-top: 16px;
+}
+
 .filter .power-radio + label {
   background: url(/img/radio-on.svg);
   background-repeat: no-repeat;
-  padding-left: 30px;
+  padding-left: 35px;
+  padding-bottom: 10px;
 }
 
 .filter .power-radio:checked + label {
@@ -932,12 +998,18 @@ img {
   background-repeat: no-repeat;
 }
 
-.filter button {
+.filter .show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
   background-color: var(--basic-white);
-  border: 1px solid var(--basic-gray);
+  border: 1px solid var(--basic-gray-light-5);
+  margin-top: 35px;
+  width: 100%;
+  height: 38px;
 }
 
 /* Сортировка */
