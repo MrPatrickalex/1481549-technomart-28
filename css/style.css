@@ -66,6 +66,7 @@
   --basic-white: #ffffff;
   --basic-sienna: #ffd180;
   --basic-sea: #32425c;
+  --basic-sea-2: #405069;
   --basic-sea-light: #f1f5f7;
   --basic-sea-dark: #293449;
   --basic-brown-light: #f9f5f0;
@@ -470,23 +471,11 @@ img {
 
 /* Преимущества */
 
-.advantages-list {
-  display: grid;
-  grid-template-columns: 300px 300px 300px;
-  grid-template-rows: 125px 125px 125px;
-  gap: 20px;
-}
-
-.advantages-list .advantages-perforators {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 4;
-}
-
 .advantages {
   color: var(--basic-white);
   font-family: "Cuprum", Arial, sans-serif;
+  margin-top: 59px;
+  margin-bottom: 59px;
 }
 
 .advantages ul {
@@ -495,39 +484,10 @@ img {
   list-style: none;
 }
 
-.advantages .advantages-materials {
-  background-color: var(--basic-yellow-1);
-  background-image: url(/img/bucket-icon.svg);
-  background-repeat: no-repeat;
-}
-
-.advantages .advantages-instruments {
-  background-color: var(--basic-blue);
-  background-image: url(/img/insrument.svg);
-  background-repeat: no-repeat;
-}
-
-.advantages .advantages-techincs {
-  background-color: var(--basic-pink);
-  background-image: url(/img/tractor.svg);
-  background-repeat: no-repeat;
-}
-
-.advantages .advantages-sale {
-  background-color: var(--basic-green-light);
-  background-image: url(/img/korzina.svg);
-  background-repeat: no-repeat;
-}
-
-.advantages .advantages-delivery {
-  background-color: var(--basic-yellow-2);
-  background-image: url(/img/bus.svg);
-  background-repeat: no-repeat;
-}
-
 .advantages h2 {
   font-size: 24px;
   line-height: 30px;
+  font-weight: 700;
   padding: 0;
   margin: 0;
 }
@@ -545,21 +505,127 @@ img {
   margin: 0;
 }
 
-/* Перфораторы */
+.advantages-list {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 123px 123px 123px;
+  gap: 20px;
+}
+
+.advantages-list .advantages-perforators {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.advantages .advantages-materials {
+  padding-top: 20px;
+  padding-bottom: 21px;
+  padding-left: 23px;
+  background-color: var(--basic-yellow-1);
+  background-image: url("../img/bucket-icon.svg"), url("../img/new.svg");
+  background-position: 213px 34px, 100% 0;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.advantages .advantages-instruments {
+  padding-top: 20px;
+  padding-bottom: 21px;
+  padding-left: 22px;
+  background-color: var(--basic-blue);
+  background-image: url(/img/insrument.svg);
+  background-repeat: no-repeat;
+  background-position: 194px 34px;
+}
+
+.advantages .advantages-techincs {
+  padding-top: 20px;
+  padding-bottom: 21px;
+  padding-left: 22px;
+  background-color: var(--basic-pink);
+  background-image: url(/img/tractor.svg);
+  background-repeat: no-repeat;
+  background-position: 194px 31px;
+}
+
+.advantages .advantages-sale {
+  padding-top: 20px;
+  padding-bottom: 23px;
+  padding-left: 23px;
+  background-color: var(--basic-green-light);
+  background-image: url(/img/korzina.svg);
+  background-repeat: no-repeat;
+  background-position: 196px 38px;
+}
+
+.advantages .advantages-delivery {
+  padding-top: 20px;
+  padding-bottom: 22px;
+  padding-left: 22px;
+  background-color: var(--basic-yellow-2);
+  background-image: url(/img/bus.svg);
+  background-repeat: no-repeat;
+  background-position: 191px 32px;
+}
+
+.advantages-materials h2,
+.advantages-instruments h2,
+.advantages-techincs h2 {
+  margin-bottom: 14px;
+}
+.advantages-sale h2 {
+  margin-bottom: 12px;
+}
+.advantages-delivery h2 {
+  margin-bottom: 13px;
+}
+
+.advantages-materials a,
+.advantages-instruments a,
+.advantages-techincs a,
+.advantages-sale a,
+.advantages-delivery a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.advantages-materials a {
+  padding-left: 23px;
+  padding-right: 24px;
+}
+
+.advantages-instruments a {
+  padding-left: 26px;
+  padding-right: 26px;
+}
+
+.advantages-techincs a {
+  padding-left: 30px;
+  padding-right: 31px;
+}
+
+.advantages-sale a {
+  padding-left: 22px;
+  padding-right: 23px;
+}
+
+.advantages-delivery a {
+  padding-left: 36px;
+  padding-right: 37px;
+}
 
 .advantages-perforators {
-  font-family: "Cuprum", Arial, sans-serif;
+  padding-top: 23px;
+  padding-left: 24px;
+  padding-right: 21px;
+  padding-bottom: 27px;
   background-image: url(/img/perforators-banner.jpg);
   background-repeat: no-repeat;
 }
 
-.advantages-perforators .logo {
-  color: var(--basic-white);
-  background-color: var(--basic-black-transparent);
-  background-repeat: no-repeat;
-}
-
 .advantages-perforators h2 {
+  color: var(--basic-white);
   font-weight: bold;
   font-size: 36px;
   line-height: 36px;
@@ -569,19 +635,34 @@ img {
 }
 
 .advantages-perforators p {
+  color: var(--basic-white);
   font-size: 18px;
   line-height: 24px;
   margin: 0;
   padding: 0;
+  margin-top: 5px;
 }
 
 .advantages-perforators button {
   border: none;
 }
 
+.advantages-perforators .buttons {
+  display: flex;
+  margin-top: 35px;
+  justify-content: space-between;
+}
+
 .advantages-perforators a {
+  display: block;
+  width: 192px;
   color: var(--basic-white);
   background-color: var(--basic-red);
+  margin-top: 39px;
+  padding-top: 11px;
+  padding-bottom: 9px;
+  padding-left: 46px;
+  padding-right: 46px;
 }
 
 .advantages-perforators .arrow-left {
@@ -602,51 +683,57 @@ img {
 
 /* Популярные товары */
 
+.popular-products {
+  margin-top: 59px;
+}
+
 .popular-products-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 20px;
   list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  margin-bottom: 70px;
 }
 
 /* Популярные производители */
 
-.popular-producers .head {
-  font-family: "Cuprum", Arial, sans-serif;
-  background-color: var(--basic-brown-light);
-}
-
-.popular-producers h2 {
-  color: var(--basic-sea);
-}
-
-.popular-producers a {
-  background-color: var(--basic-red);
-}
-
-.popular-producers ul {
-  list-style: none;
+.popular-producers {
+  margin-top: 70px;
+  margin-bottom: 70px;
 }
 
 .popular-producers li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid var(--basic-gray-light);
 }
 
 .popular-producers-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   display: grid;
   grid-template-columns: 220px 220px 220px 220px;
   grid-template-rows: 145px 145px;
   gap: 20px;
+  margin-top: 20px;
 }
 
 /* Сервисы */
 
 .services {
+  font-family: "Cuprum", Arial, sans-serif;
+  margin-top: 70px;
+  padding-top: 64px;
+  padding-bottom: 99px;
   background-color: var(--basic-sea-light);
 }
 
 .services h2 {
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -655,56 +742,95 @@ img {
 .services p {
   font-size: 13px;
   line-height: 24px;
+  padding: 0;
+  margin: 0;
+  margin-top: 25px;
 }
 
 .services h3 {
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
   color: var(--basic-sea);
   text-transform: uppercase;
 }
 
-.services ul {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
+.services-wrapper {
+  display: flex;
+  margin-top: 21px;
 }
 
-.services li {
-  font-family: "Cuprum", Arial, sans-serif;
+.services-list {
+  width: 240px;
+  margin: 0;
+  padding: 0;
+  padding-top: 49px;
   list-style: none;
+  /* outline: 1px solid red; */
+  position: relative;
+}
+.services-list .shadow {
+  position: absolute;
+  top: 0;
+  left: 96%;
 }
 
 .services button {
+  display: flex;
+  width: 240px;
+  padding-top: 13.5px;
+  padding-left: 22px;
+  padding-bottom: 17.5px;
   color: var(--basic-white);
   background-color: var(--basic-sea);
   border: none;
+  border-bottom: 1px solid var(--basic-sea-dark);
+  border-top: 1px solid var(--basic-sea-2);
 }
 
 .services button.checked {
   color: var(--basic-sea);
+  border: none;
   background-color: var(--basic-white);
 }
 
-.services-wrapper {
-  display: flex;
+.service {
+  padding-left: 80px;
+  /* outline: 1px solid greenyellow; */
+  width: 700px;
 }
 
-.services-list {
-  width: 300px;
+.service h3 {
+  padding: 0;
+  margin: 0;
+  padding-top: 49px;
+}
+
+.service p {
+  color: var(--basic-black);
+  padding: 0;
+  margin: 0;
+  padding-top: 30px;
 }
 
 .service-description {
-  width: 620px;
+  background: url("../img/dostavka.svg") no-repeat 100% 0;
 }
 
-/* Описание */
+.service-guarantee {
+  background: url("../img/guaratee.svg") no-repeat 100% 0;
+}
+
+.service-credit {
+  background: url("../img/credit.svg") no-repeat 100% 0;
+}
+
+/* О компании */
 
 .description-section {
   display: flex;
   justify-content: space-between;
-  padding: 70px 0;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 .description-section .description {
@@ -716,51 +842,109 @@ img {
 }
 
 .description h2 {
+  margin: 0;
+  padding: 0;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
-  margin-bottom: 36px;
   text-transform: uppercase;
 }
 
-.description .button-red {
-  display: block;
-  text-align: center;
+.description p {
+  margin: 0;
+  padding: 0;
+  margin-top: 24px;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.description ul {
+  margin: 0;
+  padding: 0;
+  margin-top: 1px;
+  list-style: none;
+  font-family: "Cuprum", Arial, sans-serif;
+  /* list-style-image: url(/img/list-bullet.svg); */
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.description li {
+  padding-left: 37px;
+  background-image: url("../img/list-bullet.svg");
+  background-repeat: no-repeat;
+}
+
+.description li:not(:first-child) {
+  margin-top: 12px;
+}
+
+.description li:nth-child(1) {
+  background-position: 0 14px;
+}
+
+.description li:nth-child(2) {
+  background-position: 0 12px;
+}
+
+.description li:nth-child(3) {
+  background-position: 0 10px;
+}
+
+.description a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding-top: 11px;
+  padding-bottom: 9px;
+  padding-left: 39px;
+  padding-right: 39px;
+  text-transform: uppercase;
   background-color: var(--basic-red);
   color: var(--basic-white);
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   width: 219px;
   height: 39px;
 }
 
-.description p {
-  margin-top: 40px;
-  font-size: 13px;
-  line-height: 24px;
-}
-
-.description ul {
-  list-style: none;
-  list-style-image: url(/img/list-bullet.svg);
-  font-size: 18px;
-  line-height: 24px;
+.contacts h2 {
+  font-family: "Cuprum", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
 }
 
 .contacts p {
+  margin: 0;
+  padding: 0;
+  margin-top: 24px;
   font-size: 13px;
   line-height: 24px;
 }
 
 .contacts .map {
+  border: none;
+  margin-top: 32px;
 }
 
 .contacts a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   background-color: var(--basic-red);
   color: var(--basic-white);
+  padding: 0;
+  padding-top: 11px;
+  margin: 0;
+  margin-top: 25px;
+  padding-bottom: 9px;
 }
 
 /* Каталог */

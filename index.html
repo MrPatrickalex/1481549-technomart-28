@@ -86,12 +86,12 @@
               <a href="#">Для стройки</a>
             </li>
             <li class="advantages-perforators">
-              <div class="logo">
-                <h2>Перфораторы</h2>
-                <p>Настоящие мужские игрушки</p>
+              <h2>Перфораторы</h2>
+              <p>Настоящие мужские игрушки</p>
+              <div class="buttons">
+                <button class="arrow-left"></button>
+                <button class="arrow-right"></button>
               </div>
-              <button class="arrow-left"></button>
-              <button class="arrow-right"></button>
               <a href="catalog.html">Открыть каталог</a>
             </li>
             <li class="advantages-sale">
@@ -213,11 +213,16 @@
           </p>
           <div class="services-wrapper">
             <ul class="services-list">
-              <li><button type="button" class="checked">Доставка</button></li>
-              <li><button type="button">Гарантия</button></li>
-              <li><button type="button">Кредит</button></li>
+              <li>
+                <button type="button" class="button checked">Доставка</button>
+              </li>
+              <li><button type="button" class="button">Гарантия</button></li>
+              <li><button type="button" class="button">Кредит</button></li>
+              <li class="shadow">
+                <img src="/img/shadow.png" alt="-" />
+              </li>
             </ul>
-            <div class="service-description">
+            <div class="service service-description">
               <h3>Доставка</h3>
               <p>
                 Мы с удовольствием доставим ваш товар прямо <br />
@@ -225,9 +230,8 @@
                 Ведь мы неплохо заработаем, <br />
                 поднимая его на ваш этаж!
               </p>
-              <img src="/img/dostavka.svg" alt="Доставка" />
             </div>
-            <div class="visually-hidden">
+            <div class="service service-guarantee visually-hidden">
               <h3>Гарантия</h3>
               <p>
                 Если купленный у нас товар поломается или заискрит, <br />
@@ -238,7 +242,7 @@
               </p>
               <img src="/img/guaratee.svg" alt="Гарантия" />
             </div>
-            <div class="visually-hidden">
+            <div class="service service-credit visually-hidden">
               <div>
                 <h3>Кредит</h3>
                 <p>
@@ -261,8 +265,8 @@
             ремонта и строительства не оставит равнодушными любителей сэкономить
             на <br />
             гастарбайтерах.
-          </p>
-          <p>
+            <br />
+            <br />
             Мы можем доставить ваш товар в самые отдаленные точки России! <br />
             Техномарт работает со многими транспортными компаниями:
           </p>
@@ -279,11 +283,11 @@
             Вы можете забрать товар сами, <br />
             заехав в наш офис:
           </p>
-          <a href="#" class="map"><img src="img/map.jpg" alt="Карта" /></a>
-          <a href="#" class="button-red">Заблудились? Напишите нам!</a>
+          <button class="map"><img src="img/map.jpg" alt="Карта" /></button>
+          <a href="#">Заблудились? Напишите нам!</a>
         </section>
       </div>
-      <section class="write-us">
+      <section class="write-us hidden">
         <h2 class="visually-hidden">Оформление заказа</h2>
         <form action="https:/echo.htmlacademy.ru" method="post">
           <div class="name-email-wrapper write-us-container">
