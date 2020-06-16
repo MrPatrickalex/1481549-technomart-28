@@ -765,7 +765,7 @@ img {
   padding: 0;
   padding-top: 49px;
   list-style: none;
-  /* outline: 1px solid red; */
+  background-image: url(../img/shadow.png);
   position: relative;
 }
 .services-list .shadow {
@@ -930,7 +930,7 @@ img {
   margin-top: 32px;
 }
 
-.contacts a {
+.contacts .button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1256,6 +1256,7 @@ img {
   margin-left: 21px;
   margin-top: 4px;
   background-image: url(/img/icon-up-dir.svg);
+  border: none;
 }
 
 .sort .arrow-down {
@@ -1264,6 +1265,7 @@ img {
   margin-left: 21px;
   margin-top: 4px;
   background-image: url(/img/icon-down-dir.svg);
+  border: none;
 }
 
 .sort a {
@@ -1422,7 +1424,7 @@ img {
   margin-left: 10px;
 }
 
-.navigation-123 button {
+.navigation-123 a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1430,6 +1432,7 @@ img {
   border: 1px solid var(--basic-gray-light);
   background-color: var(--basic-white);
   border-radius: 2px;
+  color: var(--basic-black);
 }
 
 .navigation-123 .checked {
