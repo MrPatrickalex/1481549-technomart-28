@@ -5,6 +5,9 @@
     <title>HTML Academy: Техномарт</title>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=8d9e9545-aa08-4c41-bdd3-dd01a9565dd4&lang=ru_RU" type="text/javascript">
+    </script>
+    <script src="js/script.js"></script>
   </head>
   <body class="page-body">
     <header class="header">
@@ -317,48 +320,7 @@
           <a href="#" class="button">Заблудились? Напишите нам!</a>
         </section>
       </div>
-      <section class="write-us hidden">
-        <h2 class="visually-hidden">Оформление заказа</h2>
-        <form action="https:/echo.htmlacademy.ru" method="post">
-          <div class="name-email-wrapper write-us-container">
-            <p class="writeus-name">
-              <label for="form-name">Ваше имя:</label>
-              <input
-                type="text"
-                name="name"
-                id="form-name"
-                placeholder="Имя Фамилия"
-                required
-              />
-            </p>
-            <p class="writeus-email">
-              <label for="form-email">Ваше имя:</label>
-              <input
-                type="email"
-                name="email"
-                id="form-email"
-                placeholder="email@example.com"
-                required
-              />
-            </p>
-            <p class="writeus-text">
-              <label for="form-comment">Текст письма:</label>
-              <textarea
-                name="comment"
-                id="form-comment"
-                placeholder="В свободной форме"
-                required
-              ></textarea>
-            </p>
-          </div>
-          <div class="button-wrapper">
-            <div class="write-us-container">
-              <button type="submit" class="confirm">Оформить заказ</button>
-            </div>
-          </div>
-        </form>
-        <button type="button" aria-label="Закрыть" class="button-close" />
-      </section>
+      
     </main>
     <footer class="footer">
       <section class="footer-navigation">
@@ -425,5 +387,50 @@
         </div>
       </section>
     </footer>
+    <section class="modal map">
+      <div id="map" class="map-container"></div>
+    </section>
+    <section class="modal write-us hidden">
+        <h2 class="visually-hidden">Оформление заказа</h2>
+        <form action="https:/echo.htmlacademy.ru" method="post">
+          <div class="name-email-wrapper write-us-container">
+            <p class="writeus-name">
+              <label for="form-name">Ваше имя:</label>
+              <input
+                type="text"
+                name="name"
+                id="form-name"
+                placeholder="Имя Фамилия"
+                required
+              />
+            </p>
+            <p class="writeus-email">
+              <label for="form-email">Ваше имя:</label>
+              <input
+                type="email"
+                name="email"
+                id="form-email"
+                placeholder="email@example.com"
+                required
+              />
+            </p>
+            <p class="writeus-text">
+              <label for="form-comment">Текст письма:</label>
+              <textarea
+                name="comment"
+                id="form-comment"
+                placeholder="В свободной форме"
+                required
+              ></textarea>
+            </p>
+          </div>
+          <div class="button-wrapper">
+            <div class="write-us-container">
+              <button type="submit" class="confirm">Оформить заказ</button>
+            </div>
+          </div>
+        </form>
+        <button type="button" aria-label="Закрыть" class="button-close" />
+      </section>
   </body>
 </html>
