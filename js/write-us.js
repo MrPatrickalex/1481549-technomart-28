@@ -13,7 +13,10 @@ try {
   isStorageSupport = false;
 }
 
+console.log("TCL:", form);
+
 form.addEventListener("submit", function (event) {
+  console.log("TCL:", test);
   console.log(name.value, email.value, comment.value);
   if (!name.value || !email.value || !comment.value) {
     event.preventDefault();
