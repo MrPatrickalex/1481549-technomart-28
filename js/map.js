@@ -28,3 +28,30 @@ function init() {
     )
   );
 }
+
+var mapLink = document.querySelector(".map-link");
+var mapPopup = document.querySelector(".modal-map");
+var mapClose = document.querySelector(".map-button-close");
+
+mapLink.addEventListener("click", function (event) {
+  event.preventDefault();
+  mapPopup.classList.add("modal-show");
+  mapPopup.classList.remove("modal-hidden");
+});
+
+mapClose.addEventListener("click", function (event) {
+  event.preventDefault();
+  mapPopup.classList.remove("modal-show");
+  mapPopup.classList.remove("modal-error");
+  mapPopup.classList.add("modal-hidden");
+});
+
+window.addEventListener("keydown", function (event) {
+  if (event.keyCode === 27) {
+    if (mapPopup.classList.contains("modal-show")) {
+      event.preventDefault();
+      mapPopup.classList.remove("modal-show");
+      mapPopup.classList.add("modal-hidden");
+    }
+  }
+});
