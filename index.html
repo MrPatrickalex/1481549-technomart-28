@@ -410,7 +410,7 @@
     </section>
     <section class="modal write-us modal-hidden">
       <h2 class="visually-hidden">Оформление заказа</h2>
-      <form action="https:/echo.htmlacademy.ru" method="post">
+      <form id="form" action="https:/echo.htmlacademy.ru" method="post">
         <div class="name-email-wrapper write-us-container">
           <p class="writeus-name">
             <label for="form-name">Ваше имя:</label>
@@ -419,7 +419,6 @@
               name="name"
               id="form-name"
               placeholder="Имя Фамилия"
-              required
             />
           </p>
           <p class="writeus-email">
@@ -429,7 +428,6 @@
               name="email"
               id="form-email"
               placeholder="email@example.com"
-              required
             />
           </p>
           <p class="writeus-text">
@@ -438,7 +436,6 @@
               name="comment"
               id="form-comment"
               placeholder="В свободной форме"
-              required
             ></textarea>
           </p>
         </div>
@@ -454,7 +451,6 @@
       src="https://api-maps.yandex.ru/2.1/?apikey=8d9e9545-aa08-4c41-bdd3-dd01a9565dd4&lang=ru_RU"
       type="text/javascript"
     ></script>
-    <script src="js/write-us.js"></script>
-    <script src="js/map.js"></script>
+    <script src="js/minimaze.js"></script>
   </body>
 </html>

@@ -1412,9 +1412,6 @@ img {
   background-color: var(--basic-sea-dark);
 }
 
-.services .button:focus {
-  outline: none;
-}
 
 .services .checked {
   color: var(--basic-sea);
@@ -1863,7 +1860,8 @@ img {
 }
 
 .filter .producers-checkbox:focus + label {
-  box-shadow: 2px 2px 5px var(--basic-gray);
+  outline: 1px solid var(--basic-black);
+  outline-offset: 3px;
 }
 
 .producer-item label {
@@ -1976,7 +1974,8 @@ img {
 }
 
 .filter .power-radio:focus + label {
-  box-shadow: 2px 2px 5px var(--basic-gray);
+  outline: 1px solid var(--basic-black);
+  outline-offset: 3px;
 }
 
 .filter .power-radio + label {
