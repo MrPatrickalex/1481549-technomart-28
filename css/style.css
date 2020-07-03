@@ -91,17 +91,21 @@
   --basic-black: #000000;
   --basic-black-light: #444444;
   --basic-gray: #a9a9a9;
+  --basic-gray-2: #ababab;
   --basic-gray-light: #eaeaea;
   --basic-gray-light-2: #c5c5c5;
   --basic-gray-light-3: #f4f4f4;
   --basic-gray-light-4: #d7dcde;
   --basic-gray-light-5: #ebebeb;
   --basic-gray-light-6: #e5e5e5;
+  --basic-gray-light-7: #cfcfcf;
   --basic-white-transparent: rgba(255, 255, 255, 0.3);
   --basic-white-full-transparent: rgba(255, 255, 255, 0);
+  --basic-white-transparent-2: rgba(255, 255, 255, 0.5);
   --basic-black-transparent: rgba(0, 0, 0, 0.25);
   --basic-black-transparent-2: rgba(0, 0, 0, 0.3);
   --basic-black-transparent-3: rgba(0, 0, 0, 0.1);
+  --basic-black-transparent-4: rgba(0, 0, 0, 0.15);
 }
 
 *,
@@ -275,7 +279,7 @@ img {
 }
 
 .header-bookmarks:active {
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--basic-white-transparent-2);
   background-color: var(--basic-sea-dark-pressed);
   background-image: url('data:image/svg+xml;utf8, <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.3"><path d="M14 15C14 15.55 13.632 15.741 13.182 15.426L7.819 11.661C7.369 11.346 6.632 11.346 6.182 11.661L0.818 15.426C0.368 15.741 0 15.55 0 15V1C0 0.45 0.45 0 1 0H13C13.55 0 14 0.45 14 1V15Z" fill="white"/></g></svg>');
 }
@@ -297,7 +301,7 @@ img {
 }
 
 .header-items:active {
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--basic-white-transparent-2);
   background-color: var(--basic-sea-dark-pressed);
   background-image: url('data:image/svg+xml;utf8, <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.3"><path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z" fill="white"/><path d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z" fill="white"/><path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="white"/></g></svg>');
 }
@@ -339,7 +343,7 @@ img {
 
 .header-make-order:active {
   background-color: var(--basic-green);
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--basic-white-transparent-2);
 }
 
 .header-details {
@@ -606,7 +610,7 @@ img {
 }
 
 .navigation-list .navigation-item:active a {
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--basic-white-transparent-2);
   background-color: var(--basic-sea-dark);
 }
 
@@ -734,7 +738,7 @@ img {
   padding-top: 21px;
   padding-left: 22px;
   background-color: var(--basic-blue);
-  background-image: url(/img/insrument.svg);
+  background-image: url(../img/insrument.svg);
   background-repeat: no-repeat;
   background-position: 194px 34px;
 }
@@ -756,7 +760,7 @@ img {
   padding-bottom: 21px;
   padding-left: 22px;
   background-color: var(--basic-pink);
-  background-image: url(/img/tractor.svg);
+  background-image: url(../img/tractor.svg);
   background-repeat: no-repeat;
   background-position: 191px 31px;
 }
@@ -778,7 +782,7 @@ img {
   padding-bottom: 23px;
   padding-left: 23px;
   background-color: var(--basic-green-light);
-  background-image: url(/img/korzina.svg);
+  background-image: url(../img/korzina.svg);
   background-repeat: no-repeat;
   background-position: 196px 26px;
 }
@@ -800,7 +804,7 @@ img {
   padding-bottom: 22px;
   padding-left: 22px;
   background-color: var(--basic-yellow-2);
-  background-image: url(/img/bus.svg);
+  background-image: url(../img/bus.svg);
   background-repeat: no-repeat;
   background-position: 191px 32px;
 }
@@ -818,7 +822,7 @@ img {
 }
 
 .advantages-perforators {
-  background-image: url(/img/perforators-banner.jpg);
+  background-image: url(../img/perforators-banner.jpg);
   background-repeat: no-repeat;
 }
 
@@ -826,7 +830,7 @@ img {
   padding-top: 23px;
   padding-left: 24px;
   padding-bottom: 15px;
-  background: rgba(0, 0, 0, 0.25);
+  background: var(--basic-black-transparent);
 }
 
 .advantages-perforators h2 {
@@ -860,7 +864,7 @@ img {
   width: 50px;
   height: 50px;
   background-color: var(--basic-white-full-transparent);
-  background-image: url(/img/icon-left.svg);
+  background-image: url(../img/icon-left.svg);
   background-repeat: no-repeat;
   margin-left: 24px;
   border: none;
@@ -870,7 +874,7 @@ img {
   width: 50px;
   height: 50px;
   background-color: var(--basic-white-full-transparent);
-  background-image: url(/img/icon-right.svg);
+  background-image: url(../img/icon-right.svg);
   background-repeat: no-repeat;
   margin-right: -8px;
   border: none;
@@ -984,7 +988,7 @@ img {
 }
 
 .popular-product-item:hover {
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 20px var(--basic-black-transparent-4);
 }
 
 .popular-product-item:hover .img-wrapper {
@@ -1060,22 +1064,28 @@ img {
 }
 
 .popular-product-item .button {
+  font-family:   "Cuprum", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
   width: 135px;
   height: 39px;
   border-radius: 2px;
+  text-transform: uppercase;
 }
 
 .popular-product-item .button-buy {
   color: var(--basic-white);
   background-color: var(--basic-green);
-  background-image: url(/img/icon-cart.svg);
+  background-image: url(../img/icon-cart.svg);
   background-repeat: no-repeat;
   background-position: 30px 10px;
+  padding-left: 53px;
+  padding-top: 10px;
   box-shadow: inset 0px -3px 0px var(--basic-green-dark);
 }
 
@@ -1092,6 +1102,8 @@ img {
   background-color: var(--basic-white);
   background-image: none;
   border: 3px solid var(--basic-green);
+  padding-left: 30px;
+  padding-top: 10px;
   margin-top: 10px;
 }
 
@@ -1262,7 +1274,7 @@ img {
 
 .popular-producers li:hover {
   border: 1px solid var(--basic-gray-light);
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 20px var(--basic-black-transparent-4);
 }
 
 .popular-producers li:active {
@@ -1647,7 +1659,7 @@ img {
 }
 
 .history-item:not(:first-of-type) {
-  background: url(/img/history-arrow.svg) no-repeat left top;
+  background: url(../img/history-arrow.svg) no-repeat left top;
   background-position-x: 0px;
   background-position-y: 5px;
 }
@@ -1769,8 +1781,8 @@ img {
   padding: 0;
   border: 8px solid var(--basic-white);
   border-radius: 50%;
-  box-shadow: 0 2px 1px 0 #cfcfcf;
-  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 var(--basic-gray-light-7);
+  background-color: var(--basic-gray-2);
   box-sizing: content-box;
   position: absolute;
   top: 30px;
@@ -2190,7 +2202,7 @@ img {
 }
 
 .product-item:hover {
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 20px var(--basic-black-transparent-4);
 }
 
 .product-item:hover .img-wrapper {
@@ -2267,22 +2279,28 @@ img {
 }
 
 .product-item .button {
+  font-family:   "Cuprum", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
   width: 135px;
   height: 39px;
   border-radius: 2px;
+  text-transform: uppercase;
 }
 
 .product-item .button-buy {
   color: var(--basic-white);
   background-color: var(--basic-green);
-  background-image: url(/img/icon-cart.svg);
+  background-image: url(../img/icon-cart.svg);
   background-repeat: no-repeat;
   background-position: 30px 10px;
+  padding-left: 53px;
+  padding-top: 10px;
   box-shadow: inset 0px -3px 0px var(--basic-green-dark);
 }
 
@@ -2299,7 +2317,9 @@ img {
   background-color: var(--basic-white);
   background-image: none;
   border: 3px solid var(--basic-green);
-  margin-top: 10px;
+  padding-left: 30px;
+  padding-top: 10px;
+  margin-top: 9px;
 }
 
 .product-item .button-to-bookmarks:hover {
@@ -2320,6 +2340,8 @@ img {
 }
 .bosch-bfg-6000 .product-buttons {
   margin-top: 21px;
+  margin-left: -2px;
+
 }
 .bosch-bfg-6000 .product-name {
   line-height: 21px;
@@ -2775,7 +2797,7 @@ img {
   width: 21px;
   height: 21px;
   background-color: transparent;
-  background-image: url(/img/icon-close.svg);
+  background-image: url(../img/icon-close.svg);
   background-repeat: no-repeat;
   position: absolute;
   top: 15px;
@@ -2803,7 +2825,7 @@ img {
   width: 21px;
   height: 21px;
   background-color: transparent;
-  background-image: url(/img/icon-close.svg);
+  background-image: url(../img/icon-close.svg);
   background-repeat: no-repeat;
   position: absolute;
   top: 11px;
@@ -2912,7 +2934,7 @@ img {
 .notify p {
   font-size: 24px;
   line-height: 30px;
-  background: url(/img/icon-mark.svg) no-repeat 82px 48px;
+  background: url(../img/icon-mark.svg) no-repeat 82px 48px;
   padding: 0;
   margin: 0;
   padding-top: 66px;
@@ -2951,7 +2973,7 @@ img {
   width: 21px;
   height: 21px;
   background-color: transparent;
-  background-image: url(/img/icon-close.svg);
+  background-image: url(../img/icon-close.svg);
   background-repeat: no-repeat;
   position: absolute;
   top: 10px;
